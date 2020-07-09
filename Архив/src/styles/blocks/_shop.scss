@@ -1,0 +1,64 @@
+.Shop {
+  @include main_grid;
+  position: relative;
+  &__list {
+    padding: 2rem 0;
+    @include main_paragraph;
+    .card {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.SignIn, .SignUp, .AdminLogin, .ModeratorLogin {
+  @include main_grid;
+  @include big_padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  position: relative;
+  .ant-alert {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .breadcrumb {
+    position: absolute;
+    top: 2rem;
+  }
+  h1 {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  form {
+    width: 60%;
+  }
+}
+
+.Cabinet {
+  &__content {
+    @include main_padding;
+  }
+}
+
+.AdminPanel {
+  &__content {
+    @include main_padding;
+  }
+}
+
+.Dashboard {
+  @include main_grid;
+  @include main_padding;
+}
+
+.ModeratorPanel {
+  &__content {
+    @include main_padding;
+  }
+}

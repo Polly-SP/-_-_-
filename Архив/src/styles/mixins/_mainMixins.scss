@@ -1,0 +1,30 @@
+@mixin main_grid {
+  width: 100%;
+  height: 100vh;
+}
+@mixin main_padding {
+  padding: 2rem;
+}
+@mixin big_padding {
+  padding: 5rem 10rem;
+}
+@mixin flex_row_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex_row_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex_column_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin main_paragraph {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
